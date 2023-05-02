@@ -53,6 +53,10 @@ a {
   z-index: 1;
 }
 
+.bookmark > svg {
+  color: red;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -81,6 +85,13 @@ footer {
 
 nav {
   bottom: -10px;
+}
+
+nav > ul {
+  margin-bottom: 0;
+  border: 3px solid;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
 body {
