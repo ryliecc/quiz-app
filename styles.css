@@ -17,6 +17,7 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
+  padding-bottom: 55px;
 }
 
 section {
@@ -54,10 +55,14 @@ a {
 }
 
 .bookmark > svg {
-  color: red;
+  fill: rgb(185, 72, 59);
 }
 
-ul {
+.button__answer {
+  background-color: salmon;
+}
+
+.taglist {
   display: flex;
   list-style: none;
   background-color: white;
@@ -76,22 +81,33 @@ a {
   color: black;
 }
 
-footer {
+.footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  height: 55px;
 }
 
-nav {
-  bottom: -10px;
+.nav {
+  display: flex;
 }
 
-nav > ul {
-  margin-bottom: 0;
-  border: 3px solid;
-  justify-content: space-between;
-  padding-left: 0;
+.nav a {
+  background-color: salmon;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav svg {
+  background-color: transparent;
+  border: none;
+  height: 1em;
+  width: 1em;
+  font-size: 30px;
+  padding-top: 3px;
 }
 
 body {
