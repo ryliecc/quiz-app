@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rylie's Quiz App</title>
-    <link rel="charset" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header><h1>Rylie's Quiz App</h1></header>
     <main>
       <section class="question-card">
-        <button type="button" name="bookmark" class="bookmark">
+        <button type="button" name="bookmark" class="non-bookmark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -28,9 +28,11 @@
         <p>What property flips the axes in flexbox?</p>
         <button type="button">Show answer</button>
         <p hidden>flex-direction</p>
-        <a href="Beispiellink1">#html</a>
-        <a href="Beispiellink2">#flexbox</a>
-        <a href="Beispiellink3">#css</a>
+        <ul>
+          <li class="tag"><a href="Beispiellink1">#html</a></li>
+          <li class="tag"><a href="Beispiellink2">#flexbox</a></li>
+          <li class="tag"><a href="Beispiellink3">#css</a></li>
+        </ul>
       </section>
       <section class="question-card">
         <button type="button" name="bookmark" class="bookmark">
@@ -72,11 +74,21 @@
         <p>Lorem Ipsum Dolor Sit?</p>
         <button type="button">Show answer</button>
         <p hidden>Lorem Ipsum</p>
-        <a href="Beispiellink1">#html</a>
-        <a href="Beispiellink2">#flexbox</a>
-        <a href="Beispiellink3">#css</a>
+        <ul>
+          <li class="tag"><a href="Beispiellink1">#html</a></li>
+          <li class="tag"><a href="Beispiellink2">#flexbox</a></li>
+          <li class="tag"><a href="Beispiellink3">#css</a></li>
+        </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Bookmarks</li>
+          <li>My Profile</li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
