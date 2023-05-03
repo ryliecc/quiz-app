@@ -30,10 +30,32 @@ section {
   margin-right: 8px;
 }
 
+.profile_header > .username {
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 175px;
+}
+
+.about_me {
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 175px;
+}
+
 p {
-  background-color: white;
-  position: relative;
-  top: 10px;
+  background-color: transparent;
+  top: 80px;
+  left: 120px;
+}
+
+.profile_picture {
+  width: 100px;
+  border-radius: 50px;
+  margin: 20px;
+  position: absolute;
+  left: 10px;
 }
 
 button > svg {
@@ -87,6 +109,7 @@ a {
   left: 0;
   right: 0;
   height: 55px;
+  z-index: 2;
 }
 
 .nav {
