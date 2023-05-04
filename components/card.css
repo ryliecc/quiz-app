@@ -1,0 +1,50 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 55px;
+}
+
+.question-card {
+  background-color: white;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  text-align: center;
+  position: relative;
+  margin-right: 8px;
+}
+
+.question-card--question {
+  background-color: transparent;
+  top: 80px;
+  left: 120px;
+}
+
+.question-card--answer-button {
+  background-color: salmon;
+}
+
+.question-card--answer {
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.taglist {
+  display: flex;
+  list-style: none;
+  background-color: transparent;
+}
+
+.tag {
+  align-items: flex-start;
+  margin: 3px;
+  border: dotted;
+  padding: 4px;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+}

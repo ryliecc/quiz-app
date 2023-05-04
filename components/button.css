@@ -1,0 +1,16 @@
+.bookmark-svg {
+  background-color: transparent;
+}
+
+.bookmark-button {
+  background-color: transparent;
+  position: absolute;
+  right: -22px;
+  top: -15px;
+  border: none;
+  z-index: 1;
+}
+
+.bookmark-button--enabled > .bookmark-svg {
+  fill: rgb(123, 32, 32);
+}

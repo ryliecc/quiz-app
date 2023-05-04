@@ -6,84 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rylie's Quiz App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header><h1>Rylie's Quiz App</h1></header>
     <main>
-      <section class="question-card">
-        <button type="button" aria-label="bookmark" class="non-bookmark">
+      <section class="question-card" data-js="question-card">
+        <button
+          type="button"
+          aria-label="bookmark"
+          class="bookmark-button"
+          data-js="bookmark-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
             aria-hidden="true"
+            class="bookmark-svg"
           >
             <path d="m23 27-8-7-8 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v22z" />
           </svg>
         </button>
-        <p>What property flips the axes in flexbox?</p>
-        <button type="button" class="button__answer">Show answer</button>
-        <p hidden>flex-direction</p>
+        <p class="question-card--question">
+          What property flips the axes in flexbox?
+        </p>
+        <button type="button" class="question-card--answer-button">
+          Show answer
+        </button>
+        <p class="question-card--answer">flex-direction</p>
         <ul class="taglist">
           <li class="tag"><a href="Beispiellink1">#html</a></li>
           <li class="tag"><a href="Beispiellink2">#flexbox</a></li>
           <li class="tag"><a href="Beispiellink3">#css</a></li>
         </ul>
       </section>
-      <section class="question-card">
-        <button type="button" aria-label="bookmark" class="bookmark">
+      <section class="question-card" data-js="question-card">
+        <button
+          type="button"
+          aria-label="bookmark"
+          class="bookmark-button"
+          data-js="bookmark-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
             aria-hidden="true"
+            class="bookmark-svg"
           >
             <path d="m23 27-8-7-8 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v22z" />
           </svg>
         </button>
-        <p>Has this question been bookmarked?</p>
-        <button type="button" class="button__answer">Show answer</button>
-        <p hidden>Well, at least it already looks like it.</p>
+        <p class="question-card--question">
+          Has this question been bookmarked?
+        </p>
+        <button type="button" class="question-card--answer-button">
+          Show answer
+        </button>
+        <p class="question-card--answer">
+          Well, at least it already looks like it.
+        </p>
         <ul class="taglist">
           <li class="tag"><a href="Beispiellink1">#html</a></li>
           <li class="tag"><a href="Beispiellink2">#flexbox</a></li>
           <li class="tag"><a href="Beispiellink3">#css</a></li>
         </ul>
       </section>
-      <section class="question-card">
-        <button type="button" aria-label="bookmark" class="non-bookmark">
+      <section class="question-card" data-js="question-card">
+        <button
+          type="button"
+          aria-label="bookmark"
+          class="bookmark-button"
+          data-js="bookmark-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
             aria-hidden="true"
+            class="bookmark-svg"
           >
             <path d="m23 27-8-7-8 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v22z" />
           </svg>
         </button>
-        <p>Was passiert mit der dritten Frage?</p>
-        <button type="button" class="button__answer">Show answer</button>
-        <p hidden>Wissen wir noch nicht.</p>
+        <p class="question-card--question">
+          Was passiert mit der dritten Frage?
+        </p>
+        <button type="button" class="question-card--answer-button">
+          Show answer
+        </button>
+        <p class="question-card--answer">Wissen wir noch nicht.</p>
         <ul class="taglist">
           <li class="tag"><a href="Beispiellink1">#html</a></li>
           <li class="tag"><a href="Beispiellink2">#flexbox</a></li>
           <li class="tag"><a href="Beispiellink3">#css</a></li>
         </ul>
       </section>
-      <section class="question-card">
-        <button type="button" aria-label="bookmark" class="non-bookmark">
+      <section class="question-card" data-js="question-card">
+        <button
+          type="button"
+          aria-label="bookmark"
+          class="bookmark-button"
+          data-js="bookmark-button"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
             aria-hidden="true"
+            class="bookmark-svg"
           >
             <path d="m23 27-8-7-8 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v22z" />
           </svg>
         </button>
-        <p>Is this whole box visible?</p>
-        <button type="button" class="button__answer">Show answer</button>
-        <p hidden>Not yet.</p>
+        <p class="question-card--question">Is this whole box visible?</p>
+        <button type="button" class="question-card--answer-button">
+          Show answer
+        </button>
+        <p class="question-card--answer">Not yet.</p>
         <ul class="taglist">
           <li class="tag"><a href="Beispiellink1">#html</a></li>
           <li class="tag"><a href="Beispiellink2">#flexbox</a></li>
