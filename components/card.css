@@ -29,6 +29,11 @@ main {
   background-color: transparent;
 }
 
+.answer-button--enabled + .question-card--answer {
+  visibility: visible;
+  color: black;
+}
+
 .taglist {
   display: flex;
   list-style: none;
