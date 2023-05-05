@@ -10,7 +10,7 @@
   grid-template-rows: repeat(2, 45px) repeat(3, 1fr);
   gap: 4px 20px;
 }
-.user-profile--picture {
+.user-profile__picture {
   width: 90px;
   border-radius: 50px;
   grid-column: 1 / 2;
@@ -18,28 +18,28 @@
   margin-top: 20px;
 }
 
-.user-profile--username {
+.user-profile__username {
   background-color: transparent;
   grid-column: 2 / 5;
   grid-row: 1 / 2;
   text-align: left;
 }
 
-.user-profile--about-me {
+.user-profile__about-me {
   background-color: transparent;
   grid-column: 2 / 5;
   grid-row: 2 / 3;
   text-align: left;
 }
 
-.user-profile--text {
+.user-profile__text {
   background-color: transparent;
   grid-column: 2 / 5;
   grid-row: 3 / 5;
   text-align: left;
 }
 
-.user-profile--question-counter {
+.user-profile__question-counter {
   border: 2px solid black;
   border-radius: 10px;
   background-color: transparent;
@@ -51,16 +51,16 @@
   grid-row: 5 / 6;
 }
 
-.user-profile--question-svg {
+.user-profile__question-svg {
   width: 2em;
   background-color: transparent;
 }
 
-.user-profile--question-number {
+.user-profile__question-number {
   background-color: transparent;
 }
 
-.user-profile--bookmark-counter {
+.user-profile__bookmark-counter {
   border: 2px solid black;
   border-radius: 10px;
   background-color: transparent;
@@ -72,13 +72,13 @@
   grid-row: 5 / 6;
 }
 
-.user-profile--bookmark-counter-svg {
+.user-profile__bookmark-counter-svg {
   width: 2em;
   background-color: transparent;
   position: relative;
   padding-top: 9px;
 }
 
-.user-profile--bookmark-number {
+.user-profile__bookmark-number {
   background-color: transparent;
 }
