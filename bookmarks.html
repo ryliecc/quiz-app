@@ -7,11 +7,14 @@
     <title>Bookmarks</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js" defer></script>
+    <!--  <script>
+      document.adoptNode(clonedQuestionCardMarked);
+    </script> -->
   </head>
   <body>
     <header><h1>Bookmarks</h1></header>
     <main>
-      <section class="question-card" data-js="question-card">
+      <!-- <section class="question-card" data-js="question-card">
         <button
           type="button"
           aria-label="bookmark"
@@ -48,7 +51,12 @@
           </li>
           <li class="question-card__tag"><a href="Beispiellink3">#css</a></li>
         </ul>
-      </section>
+      </section> -->
+      <!-- <script>
+        let questionCardMarked = document.querySelector (class="question-card--marked");
+        let clonedQuestionCardMarked = questionCardMarked.cloneNode(true);
+        document.body.appendChild(clonedQuestionCardMarked);
+      </script> -->
     </main>
     <footer class="navigation__footer">
       <nav class="navigation__nav">
