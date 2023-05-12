@@ -5,7 +5,6 @@ cards.forEach((card) => {
 
   bookmarkButton.addEventListener("click", () => {
     bookmarkButton.classList.toggle("bookmark-button--enabled");
-    /* cards.classList.toggle("question-card--marked"); */
   });
   const answerButton = card.querySelector(
     '[data-js="question-card__answer-button"'
