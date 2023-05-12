@@ -1,0 +1,47 @@
+.create-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 20px;
+  border: solid;
+  padding: 5%;
+}
+
+.create-form__question-label {
+  background-color: transparent;
+  padding: 2%;
+}
+
+.create-form__question {
+  background-color: transparent;
+  padding: 2%;
+}
+
+.create-form__answer-label {
+  background-color: transparent;
+  padding: 2%;
+}
+
+.create-form__answer {
+  background-color: transparent;
+  padding: 2%;
+}
+
+.create-form__tag-label {
+  background-color: transparent;
+  padding: 2%;
+}
+
+.create-form__tag {
+  background-color: transparent;
+  padding: 2%;
+}
+
+.create-form__submit {
+  background-color: transparent;
+  padding: 3%;
+  margin: 2%;
+  font-size: 1em;
+  align-self: center;
+}
