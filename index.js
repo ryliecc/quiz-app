@@ -19,8 +19,4 @@ cards.forEach((card) => {
       answerButton.textContent = "Hide answer";
     }
   });
-
-  const answerButtonEnabled = card.querySelector(
-    '[class="answer-button--enabled"]'
-  );
 });

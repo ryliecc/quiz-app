@@ -23,10 +23,6 @@
   background-color: transparent;
 }
 
-/* .answer-button--enabled {
-  replace("Hide answer");
-} */
-
 .answer-button--enabled + .question-card__answer {
   visibility: visible;
   color: black;
