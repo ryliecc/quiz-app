@@ -11,15 +11,24 @@
   <body>
     <header><h1>Create new Questions</h1></header>
     <main>
-      <form action="">
-        <label for=""> </label>
-        <input type="text" />
-        <label for=""></label>
-        <input type="text" />
-        <label for=""></label>
-        <input type="text" />
-        <label for=""></label>
-        <input type="text" />
+      <form>
+        <label for="create__question">Your Question: </label>
+        <textarea
+          name="create__question"
+          id="create__question"
+          cols="30"
+          rows="2"
+        ></textarea>
+        <label for="create__answer">Your answer:</label>
+        <textarea
+          name="create__answer"
+          id="create__answer"
+          cols="30"
+          rows="3"
+        ></textarea>
+        <label for="create__tag">Tag:</label>
+        <input type="text" id="create__tag" />
+        <button type="submit">Create question</button>
       </form>
     </main>
     <footer class="navigation__footer">
