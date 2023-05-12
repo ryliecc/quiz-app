@@ -7,6 +7,9 @@
     <title>Bookmarks</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./index.js" defer></script>
+    <!--  <script>
+      document.adoptNode(clonedQuestionCardMarked);
+    </script> -->
   </head>
   <body>
     <header><h1>Bookmarks</h1></header>
@@ -49,6 +52,11 @@
           <li class="question-card__tag"><a href="Beispiellink3">#css</a></li>
         </ul>
       </section>
+      <!-- <script>
+        let questionCardMarked = document.querySelector (class="question-card--marked");
+        let clonedQuestionCardMarked = questionCardMarked.cloneNode(true);
+        document.body.appendChild(clonedQuestionCardMarked);
+      </script> -->
     </main>
     <footer class="navigation__footer">
       <nav class="navigation__nav">
@@ -72,6 +80,14 @@
             <path d="m23 27-8-7-8 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v22z" />
           </svg>
           Saved
+        </a>
+        <a href="./form.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4V7Z"
+            />
+          </svg>
+          Add More
         </a>
         <a href="./profile.html">
           <svg
