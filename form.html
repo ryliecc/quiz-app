@@ -7,11 +7,12 @@
     <title>Rylie's Quiz App</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./javascript/form.js" defer></script>
+    <script src="./javascript/card.js" defer></script>
   </head>
   <body>
     <header><h1>Create new Questions</h1></header>
     <main>
-      <form class="create-form">
+      <form class="create-form" data-js="create-form">
         <label for="create-form__question" class="create-form__question-label"
           >Your Question:
         </label>
@@ -19,6 +20,7 @@
           name="create-form__question"
           id="create-form__question"
           class="create-form__question"
+          data-js="create-form__question"
           cols="30"
           rows="2"
         ></textarea>
@@ -29,17 +31,24 @@
           name="create-form__answer"
           id="create-form__answer"
           class="create-form__answer"
+          data-="create-form__answer"
           cols="30"
           rows="3"
         ></textarea>
         <label for="create-form__tag" class="create-form__tag-label"
           >Tag:</label
         >
-        <input type="text" id="create-form__tag" class="create-form__tag" />
+        <input
+          type="text"
+          id="create-form__tag"
+          class="create-form__tag"
+          data-js="create-form__tag"
+        />
         <button type="submit" class="create-form__submit">
           Create question
         </button>
       </form>
+      <div data-js="card-container"></div>
     </main>
     <footer class="navigation__footer">
       <nav class="navigation__nav">
