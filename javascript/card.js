@@ -1,5 +1,3 @@
-console.clear();
-
 const cards = document.querySelectorAll('[data-js="question-card"]');
 
 cards.forEach((card) => {

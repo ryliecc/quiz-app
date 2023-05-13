@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="./javascript/form.js" defer></script>
     <script src="./javascript/card.js" defer></script>
+    <!-- Wieso funktionieren die card buttons nicht für neue Karten? -->
   </head>
   <body>
     <header><h1>Create new Questions</h1></header>
@@ -23,7 +24,11 @@
           data-js="create-form__question"
           cols="30"
           rows="2"
+          maxlength="150"
         ></textarea>
+        <small class="create-form__character-counter"
+          >(<span data-js="amountLeft-question"></span> characters left)</small
+        >
         <label for="create-form__answer" class="create-form__answer-label"
           >Your answer:</label
         >
@@ -31,10 +36,14 @@
           name="create-form__answer"
           id="create-form__answer"
           class="create-form__answer"
-          data-="create-form__answer"
+          data-js="create-form__answer"
           cols="30"
-          rows="3"
+          rows="2"
+          maxlength="150"
         ></textarea>
+        <small class="create-form__character-counter"
+          >(<span data-js="amountLeft-answer">150</span> characters left)</small
+        >
         <label for="create-form__tag" class="create-form__tag-label"
           >Tag:</label
         >
