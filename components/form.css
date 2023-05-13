@@ -6,6 +6,7 @@
   border-radius: 20px;
   border: solid;
   padding: 5%;
+  margin-bottom: 5%;
 }
 
 .create-form__question-label {
@@ -26,6 +27,15 @@
 .create-form__answer {
   background-color: transparent;
   padding: 2%;
+}
+
+.create-form__character-counter {
+  background-color: transparent;
+  align-self: flex-end;
+}
+
+.create-form__character-counter > span {
+  background-color: transparent;
 }
 
 .create-form__tag-label {

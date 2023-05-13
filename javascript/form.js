@@ -1,5 +1,3 @@
-console.clear();
-
 const form = document.querySelector('[data-js="create-form"]');
 const questionField = document.querySelector(
   '[data-js="create-form__question"]'
@@ -17,6 +15,7 @@ form.addEventListener("submit", (event) => {
 
   const newCard = document.createElement("section");
   newCard.classList.add("question-card");
+  newCard.setAttribute("data-js", "question-card");
   newCard.innerHTML = `
   <button type="button" aria-label="bookmark" class="bookmark-button" data-js="bookmark-button">
           <svg
@@ -45,4 +44,25 @@ form.addEventListener("submit", (event) => {
   cardContainer.append(newCard);
   event.target.reset();
   questionField.focus();
+});
+
+const characterCounters = document.querySelectorAll(
+  '[data-js="create-form__character-counter'
+);
+characterCounters.forEach((counter) => {
+  const amountLeft = counter.querySelector('[data-js="amountLeft"]');
+  const maxLength = questionField.getAttribute("maxlength");
+
+  const updateAmountLeft = (value) => {
+    amountLeft.innerText = value;
+  };
+
+  updateAmountLeft(maxLength);
+
+  questionField.addEventListener("input", () => {
+    updateAmountLeft(maxLength - questionField.value.length);
+  });
+  answerField.addEventListener("input", () => {
+    updateAmountLeft(maxLength - answerField.value.length);
+  });
 });
