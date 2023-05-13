@@ -46,11 +46,12 @@ form.addEventListener("submit", (event) => {
   questionField.focus();
 });
 
-function characterCounter(inputField, specifier) {
-  const amountLeft = document.querySelector(
-    '[data-js="amountLeft-' + specifier + '"]'
-  );
-  const maxLength = inputField.getAttribute("maxlength");
+const characterCounters = document.querySelectorAll(
+  '[data-js="create-form__character-counter'
+);
+characterCounters.forEach((counter) => {
+  const amountLeft = counter.querySelector('[data-js="amountLeft"]');
+  const maxLength = questionField.getAttribute("maxlength");
 
   const updateAmountLeft = (value) => {
     amountLeft.innerText = value;
@@ -58,29 +59,10 @@ function characterCounter(inputField, specifier) {
 
   updateAmountLeft(maxLength);
 
-  inputField.addEventListener("input", () => {
-    updateAmountLeft(maxLength - inputField.value.length);
+  questionField.addEventListener("input", () => {
+    updateAmountLeft(maxLength - questionField.value.length);
   });
-}
-
-questionField.addEventListener("input", () => {
-  characterCounter(questionField, question);
+  answerField.addEventListener("input", () => {
+    updateAmountLeft(maxLength - answerField.value.length);
+  });
 });
-
-answerField.addEventListener("input", () => {
-  characterCounter(answerField, answer);
-});
-
-/* const amountLeft = document.querySelector('[data-js="amountLeft-question"]');
-const maxLength = questionField.getAttribute("maxlength"); */
-
-/* const updateAmountLeft = (value) => {
-  amountLeft.innerText = value;
-};
-
-updateAmountLeft(maxLength);
-
-inputField.addEventListener("input", () => {
-  updateAmountLeft(maxLength - inputField.value.length);
-});
- */
