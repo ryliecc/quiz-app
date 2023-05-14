@@ -46,12 +46,14 @@ form.addEventListener("submit", (event) => {
   questionField.focus();
 });
 
-const characterCounters = document.querySelectorAll(
-  '[data-js="create-form__character-counter'
+/* const inputSections = document.querySelectorAll(
+  '[data-js="create-form__input-section"]'
 );
-characterCounters.forEach((counter) => {
-  const amountLeft = counter.querySelector('[data-js="amountLeft"]');
-  const maxLength = questionField.getAttribute("maxlength");
+
+inputSections.forEach((section) => {
+  const inputElement = section.querySelector('[class="create-form__textarea"]');
+  const amountLeft = section.querySelector('[data-js="amountLeft"]');
+  const maxLength = inputElement.getAttribute("maxlength");
 
   const updateAmountLeft = (value) => {
     amountLeft.innerText = value;
@@ -59,10 +61,20 @@ characterCounters.forEach((counter) => {
 
   updateAmountLeft(maxLength);
 
-  questionField.addEventListener("input", () => {
-    updateAmountLeft(maxLength - questionField.value.length);
+  inputElement.addEventListener("input", () => {
+    updateAmountLeft(maxLength - inputElement.value.length);
   });
-  answerField.addEventListener("input", () => {
-    updateAmountLeft(maxLength - answerField.value.length);
-  });
+}); */
+
+const amountLeft = document.querySelector('[data-js="amountLeft"]');
+const maxLength = questionField.getAttribute("maxlength");
+
+const updateAmountLeft = (value) => {
+  amountLeft.innerText = value;
+};
+
+updateAmountLeft(maxLength);
+
+questionField.addEventListener("input", () => {
+  updateAmountLeft(maxLength - questionField.value.length);
 });
