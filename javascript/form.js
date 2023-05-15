@@ -44,17 +44,19 @@ form.addEventListener("submit", (event) => {
   cardContainer.append(newCard);
   event.target.reset();
   questionField.focus();
+  answerButtonsClickMeHandler();
 });
 
-/* const inputSections = document.querySelectorAll(
+const inputSections = document.querySelectorAll(
   '[data-js="create-form__input-section"]'
 );
 
 inputSections.forEach((section) => {
-  const inputElement = section.querySelector('[class="create-form__textarea"]');
+  console.log(section);
+  const inputElement = section.querySelector(".create-form__textarea");
   const amountLeft = section.querySelector('[data-js="amountLeft"]');
   const maxLength = inputElement.getAttribute("maxlength");
-
+  console.log(inputElement);
   const updateAmountLeft = (value) => {
     amountLeft.innerText = value;
   };
@@ -64,17 +66,4 @@ inputSections.forEach((section) => {
   inputElement.addEventListener("input", () => {
     updateAmountLeft(maxLength - inputElement.value.length);
   });
-}); */
-
-const amountLeft = document.querySelector('[data-js="amountLeft"]');
-const maxLength = questionField.getAttribute("maxlength");
-
-const updateAmountLeft = (value) => {
-  amountLeft.innerText = value;
-};
-
-updateAmountLeft(maxLength);
-
-questionField.addEventListener("input", () => {
-  updateAmountLeft(maxLength - questionField.value.length);
 });
