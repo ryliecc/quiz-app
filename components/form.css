@@ -9,6 +9,12 @@
   margin-bottom: 5%;
 }
 
+.create-form__input-section {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
 .create-form__question-label {
   background-color: transparent;
   padding: 2%;
