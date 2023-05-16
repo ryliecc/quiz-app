@@ -9,6 +9,18 @@
   /* VARIABLES */
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: rgb(21, 21, 64);
+    --secondary-color: rgb(75, 125, 145);
+    --header-text: rgb(98, 133, 210);
+    --text: white;
+    --border-color: white;
+    --background-section: black;
+    --bookmark-color: rgb(24, 64, 137);
+  }
+}
+
 * {
   background-color: var(--primary-color);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

@@ -35,4 +35,5 @@
   width: 1em;
   font-size: 30px;
   padding-top: 0.1em;
+  fill: var(--text);
 }

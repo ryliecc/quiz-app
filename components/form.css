@@ -18,26 +18,31 @@
 .create-form__question-label {
   background-color: transparent;
   padding: 2%;
+  color: var(--text);
 }
 
 .create-form__question {
   background-color: transparent;
   padding: 2%;
+  color: var(--text);
 }
 
 .create-form__answer-label {
   background-color: transparent;
   padding: 2%;
+  color: var(--text);
 }
 
 .create-form__answer {
   background-color: transparent;
   padding: 2%;
+  color: var(--text);
 }
 
 .create-form__character-counter {
   background-color: transparent;
   align-self: flex-end;
+  color: var(--text);
 }
 
 .create-form__character-counter > span {
@@ -47,11 +52,13 @@
 .create-form__tag-label {
   background-color: transparent;
   padding: 2%;
+  color: var(--text);
 }
 
 .create-form__tag {
   background-color: transparent;
   padding: 2%;
+  color: var(--text);
 }
 
 .create-form__submit {
@@ -60,4 +67,5 @@
   margin: 2%;
   font-size: 1em;
   align-self: center;
+  color: var(--text);
 }

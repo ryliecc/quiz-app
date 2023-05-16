@@ -12,15 +12,18 @@
   background-color: transparent;
   top: 80px;
   left: 120px;
+  color: var(--text);
 }
 
 .question-card__answer-button {
   background-color: var(--secondary-color);
+  color: var(--text);
 }
 
 .question-card__answer {
   visibility: hidden;
   background-color: transparent;
+  color: var(--text);
 }
 
 .answer-button--enabled + .question-card__answer {
@@ -31,6 +34,7 @@
   display: flex;
   list-style: none;
   background-color: transparent;
+  color: var(--text);
 }
 
 .question-card__tag {
