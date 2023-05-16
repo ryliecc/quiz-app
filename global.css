@@ -1,11 +1,18 @@
 :root {
-  --primary-color: lightcoral;
+  --primary-color: lightsalmon;
+  --secondary-color: salmon;
+  --header-text: rgb(172, 92, 83);
+  --text: black;
+  --border-color: black;
+  --background-section: white;
+  --bookmark-color: rgb(123, 32, 32);
   /* VARIABLES */
 }
 
 * {
-  background-color: lightsalmon;
+  background-color: var(--primary-color);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: var(--text);
 }
 
 body {
@@ -20,17 +27,17 @@ main {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text);
   background-color: transparent;
 }
 
 header {
-  border: 3px black solid;
+  border: 3px var(--border-color) solid;
   margin: auto;
   text-align: center;
   margin-bottom: 15px;
 }
 
 h1 {
-  color: rgb(172, 92, 83);
+  color: var(--header-text);
 }

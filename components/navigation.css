@@ -1,6 +1,6 @@
 .navigation__footer {
   position: fixed;
-  background-color: salmon;
+  background-color: var(--secondary-color);
   bottom: 0;
   left: 0;
   right: 0;

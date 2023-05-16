@@ -12,5 +12,5 @@
 }
 
 .bookmark-button--enabled > .bookmark-svg {
-  fill: rgb(123, 32, 32);
+  fill: var(--bookmark-color);
 }

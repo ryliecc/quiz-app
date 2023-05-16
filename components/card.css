@@ -1,6 +1,6 @@
 .question-card {
-  background-color: white;
-  border: solid;
+  background-color: var(--background-section);
+  border: solid var(--border-color);
   border-radius: 10px;
   margin-bottom: 17px;
   text-align: center;
@@ -15,7 +15,7 @@
 }
 
 .question-card__answer-button {
-  background-color: salmon;
+  background-color: var(--secondary-color);
 }
 
 .question-card__answer {
@@ -25,7 +25,6 @@
 
 .answer-button--enabled + .question-card__answer {
   visibility: visible;
-  color: black;
 }
 
 .question-card__taglist {

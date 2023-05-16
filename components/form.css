@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: white;
+  background-color: var(--background-section);
   border-radius: 20px;
-  border: solid;
+  border: solid var(--border-color);
   padding: 5%;
   margin-bottom: 5%;
 }
@@ -55,7 +55,7 @@
 }
 
 .create-form__submit {
-  background-color: transparent;
+  background-color: var(--secondary-color);
   padding: 3%;
   margin: 2%;
   font-size: 1em;
