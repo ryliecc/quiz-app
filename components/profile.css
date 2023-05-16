@@ -1,6 +1,6 @@
 .user-profile {
   background-color: white;
-  border: 2px solid;
+  border: solid;
   border-radius: 10px;
   margin-bottom: 17px;
   text-align: center;
@@ -40,7 +40,7 @@
 }
 
 .user-profile__question-counter {
-  border: 2px solid black;
+  border: 0.2em solid black;
   border-radius: 10px;
   background-color: transparent;
   width: 70px;
@@ -61,7 +61,7 @@
 }
 
 .user-profile__bookmark-counter {
-  border: 2px solid black;
+  border: 0.2em solid black;
   border-radius: 10px;
   background-color: transparent;
   width: 70px;

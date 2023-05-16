@@ -42,9 +42,29 @@ form.addEventListener("submit", (event) => {
         </ul>
         `;
   cardContainer.append(newCard);
+  /* Beginn copy paste card.js */
+
+  const bookmarkButton = newCard.querySelector('[data-js="bookmark-button"]');
+
+  bookmarkButton.addEventListener("click", () => {
+    bookmarkButton.classList.toggle("bookmark-button--enabled");
+  });
+  const answerButton = newCard.querySelector(
+    '[data-js="question-card__answer-button"'
+  );
+
+  answerButton.addEventListener("click", () => {
+    answerButton.classList.toggle("answer-button--enabled");
+    if (answerButton.textContent == "Hide answer") {
+      answerButton.textContent = "Show answer";
+    } else {
+      answerButton.textContent = "Hide answer";
+    }
+  });
+
+  /* Ende copy paste card.js */
   event.target.reset();
   questionField.focus();
-  answerButtonsClickMeHandler();
 });
 
 const inputSections = document.querySelectorAll(
@@ -65,5 +85,9 @@ inputSections.forEach((section) => {
 
   inputElement.addEventListener("input", () => {
     updateAmountLeft(maxLength - inputElement.value.length);
+  });
+
+  form.addEventListener("submit", () => {
+    updateAmountLeft(maxLength);
   });
 });
